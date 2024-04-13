@@ -10,6 +10,14 @@ public class Student {
         return matricula;
     }
 
+    public String getApellido() {
+        return apellido;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
@@ -30,8 +38,8 @@ public class Student {
     public void setBase(IStudent base){
         this.base = base;
     }
-    public void add(Student student){
-        base.addStudent(student);
+    public boolean add(Student student){
+        return base.addStudent(student);
     }
 
     @Override

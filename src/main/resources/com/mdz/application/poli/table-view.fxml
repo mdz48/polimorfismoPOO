@@ -1,17 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mdz.application.poli.controllers.TableController">
+<AnchorPane prefHeight="400.0" prefWidth="847.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mdz.application.poli.controllers.TableController">
    <children>
-      <TableView fx:id="upTable" layoutX="50.0" layoutY="40.0" prefHeight="200.0" prefWidth="226.0">
+      <TableView fx:id="base1Table" layoutX="51.0" layoutY="92.0" prefHeight="200.0" prefWidth="226.0">
         <columns>
           <TableColumn fx:id="colNombre" prefWidth="75.0" text="Nombre" />
           <TableColumn fx:id="colApellido" prefWidth="75.0" text="Apellido" />
             <TableColumn fx:id="colMatricula" prefWidth="73.60003662109375" text="Matricula" />
         </columns>
       </TableView>
+      <TableView fx:id="base2Table" layoutX="329.0" layoutY="92.0" prefHeight="200.0" prefWidth="226.0">
+         <columns>
+            <TableColumn fx:id="colNombre1" prefWidth="75.0" text="Nombre" />
+            <TableColumn fx:id="colApellido1" prefWidth="75.0" text="Apellido" />
+            <TableColumn fx:id="colMatricula1" prefWidth="73.60003662109375" text="Matricula" />
+         </columns>
+      </TableView>
+      <TableView fx:id="base3Table" layoutX="597.0" layoutY="92.0" prefHeight="200.0" prefWidth="226.0">
+         <columns>
+            <TableColumn fx:id="colNombre11" prefWidth="75.0" text="Nombre" />
+            <TableColumn fx:id="colApellido11" prefWidth="75.0" text="Apellido" />
+            <TableColumn fx:id="colMatricula11" prefWidth="73.60003662109375" text="Matricula" />
+         </columns>
+      </TableView>
+      <Label layoutX="51.0" layoutY="55.0" text="Base de Datos 1" />
+      <Label layoutX="329.0" layoutY="47.0" text="Base de Datos 2" />
+      <Label layoutX="597.0" layoutY="47.0" text="Base de Datos 3" />
    </children>
 </AnchorPane>

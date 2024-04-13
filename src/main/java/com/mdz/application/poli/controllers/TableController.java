@@ -21,14 +21,48 @@ public class TableController {
     private TableColumn<Student, String> colNombre;
 
     @FXML
-    private TableView<Student> upTable;
+    private TableView<Student> base1Table;
+
+    @FXML
+    private TableColumn<Student, String> colApellido1;
+
+    @FXML
+    private TableColumn<Student, Integer> colMatricula1;
+
+    @FXML
+    private TableColumn<Student, String> colNombre1;
+
+    @FXML
+    private TableView<Student> base2Table;
+
+    @FXML
+    private TableColumn<Student, String> colApellido11;
+
+    @FXML
+    private TableColumn<Student, Integer> colMatricula11;
+
+    @FXML
+    private TableColumn<Student, String> colNombre11;
+
+    @FXML
+    private TableView<Student> base3Table;
 
     public void initialize(){
         colNombre.setCellValueFactory(new PropertyValueFactory<>("nombre"));
         colApellido.setCellValueFactory(new PropertyValueFactory<>("apellido"));
         colMatricula.setCellValueFactory(new PropertyValueFactory<>("matricula"));
-        ObservableList<Student> tableUp = FXCollections.observableArrayList(App.getUp().getStudents());
-        upTable.setItems(tableUp);
+        colNombre1.setCellValueFactory(new PropertyValueFactory<>("nombre"));
+        colApellido1.setCellValueFactory(new PropertyValueFactory<>("apellido"));
+        colMatricula1.setCellValueFactory(new PropertyValueFactory<>("matricula"));
+        colNombre11.setCellValueFactory(new PropertyValueFactory<>("nombre"));
+        colApellido11.setCellValueFactory(new PropertyValueFactory<>("apellido"));
+        colMatricula11.setCellValueFactory(new PropertyValueFactory<>("matricula"));
+        ObservableList<Student> base1 = FXCollections.observableArrayList(App.getBasesDeDatos().getBaseDatos1());
+        ObservableList<Student> base2 = FXCollections.observableArrayList(App.getBasesDeDatos().getBaseDatos2());
+        ObservableList<Student> base3 = FXCollections.observableArrayList(App.getBasesDeDatos().getBaseDatos3());
+        base1Table.setItems(base1);
+        base2Table.setItems(base2);
+        base3Table.setItems(base3);
     }
 
 }
