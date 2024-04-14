@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mdz.application.poli.controllers.HelloController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mdz.application.poli.controllers.HomeController">
    <children>
       <TextField fx:id="nombreTxt" layoutX="56.0" layoutY="88.0" prefHeight="42.0" prefWidth="198.0" />
       <TextField fx:id="apellidoTxt" layoutX="56.0" layoutY="174.0" prefHeight="42.0" prefWidth="198.0" />

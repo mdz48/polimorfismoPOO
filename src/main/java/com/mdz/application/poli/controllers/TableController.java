@@ -5,9 +5,11 @@ import com.mdz.application.poli.models.Student;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.MouseEvent;
 
 public class TableController {
 
@@ -46,6 +48,14 @@ public class TableController {
 
     @FXML
     private TableView<Student> base3Table;
+
+    @FXML
+    private Button exitButton;
+
+    @FXML
+    void onClickExitButton(MouseEvent event) {
+        App.getStageView().close();
+    }
 
     public void initialize(){
         colNombre.setCellValueFactory(new PropertyValueFactory<>("nombre"));

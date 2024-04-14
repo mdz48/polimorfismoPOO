@@ -24,7 +24,7 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         stageRoot = stage;
-        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("hello-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("home-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("NameApplication - Home");
         stage.setScene(scene);
