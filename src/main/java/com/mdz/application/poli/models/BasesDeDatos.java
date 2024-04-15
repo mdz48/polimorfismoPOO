@@ -1,11 +1,13 @@
 package com.mdz.application.poli.models;
 
+import com.mdz.application.poli.App;
+
 import java.util.ArrayList;
 
 public class BasesDeDatos {
-    private ArrayList<Student> baseDatos1 = new ArrayList<>();
-    private ArrayList<Student> baseDatos2 = new ArrayList<>();
-    private ArrayList<Student> baseDatos3 = new ArrayList<>();
+    private ArrayList<Student> baseDatos1 = App.getBaseDatos1().getBase1();
+    private ArrayList<Student> baseDatos2 = App.getBaseDatos2().getBase2();
+    private ArrayList<Student> baseDatos3 = App.getBaseDatos3().getBase3();
 
     public ArrayList<Student> getBaseDatos1() {
         return baseDatos1;
