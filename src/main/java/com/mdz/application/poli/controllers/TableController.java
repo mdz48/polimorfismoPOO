@@ -67,9 +67,9 @@ public class TableController {
         colNombre11.setCellValueFactory(new PropertyValueFactory<>("nombre"));
         colApellido11.setCellValueFactory(new PropertyValueFactory<>("apellido"));
         colMatricula11.setCellValueFactory(new PropertyValueFactory<>("matricula"));
-        ObservableList<Student> base1 = FXCollections.observableArrayList(App.getBasesDeDatos().getBaseDatos1());
-        ObservableList<Student> base2 = FXCollections.observableArrayList(App.getBasesDeDatos().getBaseDatos2());
-        ObservableList<Student> base3 = FXCollections.observableArrayList(App.getBasesDeDatos().getBaseDatos3());
+        ObservableList<Student> base1 = FXCollections.observableArrayList(App.getUPChiapas().getMySQL().getStudents());
+        ObservableList<Student> base2 = FXCollections.observableArrayList(App.getUPChiapas().getMariaDB().getStudents());
+        ObservableList<Student> base3 = FXCollections.observableArrayList(App.getUPChiapas().getBD3().getStudents());
         base1Table.setItems(base1);
         base2Table.setItems(base2);
         base3Table.setItems(base3);
